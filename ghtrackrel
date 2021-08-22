@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# remove potential trailing slash
+repo=${1%/}
+echo "$repo/releases.atom releases" >> $HOME/.config/newsboat/urls
