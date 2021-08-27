@@ -1,0 +1,7 @@
+#!/bin/sh
+
+count="0"
+find *_scrot.png | while read -r line ; do
+	mv $line "$1-$count.png"
+	count=$(echo "$count + 1" | bc)
+done
